@@ -1,0 +1,9 @@
+# Basic
+streamlit
+
+# Data
+ibis-framework[polars]
+polars
+ibis-framework[duckdb]
+duckdb
+pygwalker
