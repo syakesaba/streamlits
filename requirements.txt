@@ -7,3 +7,6 @@ polars
 ibis-framework[duckdb]
 duckdb
 pygwalker
+
+# Geo
+geopy
