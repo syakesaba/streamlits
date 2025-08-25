@@ -19,7 +19,8 @@ with st.spinner(text="検索画面を表示中..."):
 
 st.markdown(
     """
-Source code: [https://github.com/syakesaba/streamlits](https://github.com/syakesaba/streamlits)
-Bussiness Contact: [https://www.syakesaba.com](https://www.syakesaba.com)
+-----
+- Source code: [https://github.com/syakesaba/streamlits](https://github.com/syakesaba/streamlits)
+- Bussiness Contact: [https://www.syakesaba.com](https://www.syakesaba.com)
 """
 )
