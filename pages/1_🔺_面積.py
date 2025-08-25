@@ -10,6 +10,8 @@ st.sidebar.markdown("🔺の面積出すやつ")
 st.markdown("# 3点の座標を含むdraw dataをjsonで入力してください")
 sample = '[{"type":"polyline","latLngs":[{"lat":34.688321,"lng":135.519201},{"lat":34.704693,"lng":135.527484}],"color":"#a24ac3"},{"type":"polyline","latLngs":[{"lat":34.688321,"lng":135.519201},{"lat":34.702246,"lng":135.506086}],"color":"#a24ac3"},{"type":"polyline","latLngs":[{"lat":34.704693,"lng":135.527484},{"lat":34.702246,"lng":135.506086}],"color":"#a24ac3"},{"type":"circle","latLng":{"lat":34.6984145094219,"lng":135.51767823792733},"radius":1139.748138135289,"color":"#a24ac3"}]'
 json_ = st.text_input(label="draw data", help=sample)
+if not json_:
+    st.stop()
 try:
     draws = json.loads(json_)
 except ValueError as e:
